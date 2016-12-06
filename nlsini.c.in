@@ -1,0 +1,6 @@
+#include "xcftools.h"
+#ifndef nls_init
+void nls_init(void) {
+  bindtextdomain("@APPNAME@","@LOCALE_DIR@");
+  textdomain("@APPNAME@"); }
+#endif
